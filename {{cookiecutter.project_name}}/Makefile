@@ -3,12 +3,12 @@
 # python command links to the appropriate virtual environment Python.
 
 VENVS_DIR := $(HOME)/.venvs
-VENV_DIR := $(VENVS_DIR)/{{ project_name }}
+VENV_DIR := $(VENVS_DIR)/{{ cookiecutter.project_name }}
 
 # Do not remove this block. It is used by the 'help' rule when
 # constructing the help output.
 # help:
-# help: {{ project_name }} Makefile help
+# help: {{ cookiecutter.project_name }} Makefile help
 # help:
 
 # help: help                           - display this makefile's help information
