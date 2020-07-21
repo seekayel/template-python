@@ -19,6 +19,7 @@ help:
 # help: install                        - create a virtual environment for development
 .PHONY: install
 install:
+	@git status || git init
 	@pipenv install --dev
 	@pre-commit install
 
@@ -50,7 +51,7 @@ pre-commit-all:
 # help: test                           - run tests
 .PHONY: test
 test:
-	@pipenv run python -m unittest discover -s src
+	@pipenv run pytest
 
 
 # help: test-verbose                   - run tests [verbosely]
