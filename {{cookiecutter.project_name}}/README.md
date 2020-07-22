@@ -1,4 +1,4 @@
-# {{cookiecutter.project_nanme}}
+# {{cookiecutter.project_name}}
 
 TODO: one sentence decription of this project
 
